@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<title>Landing Page | Mateus Guedes</title>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+
+    <section class="banner" id="sec">
+
+        <header>
+            <a href="#" class="logo">Apresentação</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+
+        <div class="content">
+            <h2>Meu perfil <samp> Desenvolvedor</h2></samp>
+            <p>Olá tudo!<br>
+                Sou desenvolvedor web a mais de 1 ano, tenho formação academica de Sistemas para internet.
+                Atualmente sigo fazendo projetos independente, hoje estou muito bem familiarizado com linguagem de programação PHP para o beck-and e também utilizando o framework Laravel.
+                Mas estou apito a aprender novas tecnologias.  
+             </p>
+                <a href="academic.html">Mais</a>  
+                 <br>
+                 <a href="index.html">Voltar</a> 
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://github.com/mateus17bk"><img src="images/github.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/mateus-guedes-079ab715b/"><img src="images/linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Projetos</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=988637621">Contato</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation')
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Landing Page | Mateus Guedes</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="sobre.css" media="screen" />
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">Projetos</a>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=988637621">Contato</a></li>
+        </ul>
+
+     <div class="toggle" onclick="toggle()"></div>
+    </header>  
+    <section  id="home">
+        <div>
+            <h2>Aplicativo Acessbus</h2>
+            <p>
+                Este projeto de pesquisa foi elaborado durante minha formação técnica no Instituto Federal de Alagoas, 
+                foi a minha primeira experiência como programador.
+                Neste projeto tive a oportunidade de desenvolver o layout utilizando XML do Android Studio
+                e o desenvolvimento de um hardware utilizando Arduino. 
+            </p>
+        </div>
+        <img src="images/app.jpg">
+    </section> 
+
+    <section id="home">
+        <div>
+            <h2>Projeto E-commerce</h2>
+            <p>
+                Esse outro projeto foi para a minha formação acadêmica na universidade uma loja online, 
+                utilizando as principais ferramenta web, a linguagem de programação principais foi o PHP 
+                então conseguir elaborar esse pequeno e-commerce de compra e vendas de produtos, organização de clientes e 
+                controle de estoque com o banco de dados.
+            </p>
+        </div>
+        <img src="images/loja2.jpg">
+        <br>
+        <img src="images/loja.jpg" >
+    </section>
+
+    <script type="text/javascript">
+        function toggle(){
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+        }
+    </script>
+
+
+</body>
+</html>
